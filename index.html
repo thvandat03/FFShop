@@ -12,40 +12,44 @@
     <header>
         <!-- Náp bar 1 -->
         <div class="first-head">
-            <ul class="ul-first-head">
-                <li class="li-first-head"><a href="#"></a>Trang chủ</li>
-                <li class="li-first-head">
+                <div class="first-head__home"><a href="#"></a>Trang chủ</div>
+                <div class="first-head__search">
                     <div class="search-bar">
                         <input type="text" class="txt-search" placeholder="Bạn muốn tìm caideogi...">
-                        <button type="submit" id="btn-search">Tìm</button>
+                        <button type="submit" id="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </div>
-                </li>
-                <ul class="li-first-head" id="menu">Danh mục
-                    <!-- <div class="menu-list">
-                        <li class="li-first-head"><a href="#"></a>Đăng nhập</li>
-                        <li class="li-first-head"><a href="#"></a>Đăng kí</li>
-                        <li class="li-first-head"><a href="#"></a>Liên hệ</li>
-                    </div> -->
-                </ul>
-            </ul>
+                </div>
+                <div class="first-head__menu">
+                    <div  id="menu"> Danh mục
+                        <div class="menu-list">
+                                <a href="#">Đăng nhập</a>
+                                <a href="#">Đăng kí</a>
+                                <a href="#">Liên hệ</a>
+                            </ul>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
         </div>
         <!-- Náp bar 2-->
         <div class="main-head">
             <div id="logo-shop">
-                <a href="#"><img src="#" alt="LOGO"></a>
+                <a href="#"><i class="fa-solid fa-utensils"></i></a>
             </div>
             
             <div class="nav-bar">
-                <ul class="ul-nav-bar">
-                    <li class="li-nav-bar"><a href="#">Cơm</a></li>
-                    <li class="li-nav-bar"><a href="#">Bát</a></li>
-                    <li class="li-nav-bar"><a href="#">Đũa</a></li>
-                    <li class="li-nav-bar"><a href="#">Thìa</a></li>
-                    <li class="li-nav-bar"><a href="#">Nước</a></li>
-                </ul>
+                <div class="div-nav-bar">
+                    <a href="#">Cơm</a>
+                    <a href="#">Bát</a>
+                    <a href="#">Đũa</a>
+                    <a href="#">Thìa</a>
+                    <a href="#">Nước</a>
+                </div>
             </div>
             <div class="cart">
-                
+                <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </div>
     </header>
@@ -63,7 +67,7 @@
                     <div class="product-item">1</div>
                 </div>
             </div>
-            <div class="bullet-swipe">0</div>
+            <div class="bdivlet-swipe">0</div>
         </section>
         
     </article>
@@ -72,6 +76,7 @@
     <footer>
         
     </footer>
+    <script src="https://kit.fontawesome.com/2ded04794d.js" crossorigin="anonymous"></script>
     <script src="./JS/main.js"></script>
 </body>
 </html>
