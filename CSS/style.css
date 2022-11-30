@@ -7,11 +7,12 @@
     list-style-type: none;
     text-align: center;
     color: var(--tcolor);
-    font-family: Tahoma, ;
+    font-family: Tahoma ;
 }
 :root{
     --mcolor: #f7899b;
     --tcolor: #fff;
+    --hcolor: #f00;
 }
 
 /* Hét đờ */
@@ -19,7 +20,7 @@ header{
     background: var(--mcolor);
 }
 .first-head{
-    height: 5vh;
+    height: 2em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,11 +31,6 @@ header{
 .first-head a{
     padding: 10px 20px ;
 }
-.first-head i{
-    font-size: .8em;
-}
-.first-head__home{
-}
 .first-head__search{
     width: 60%;
 }
@@ -43,9 +39,9 @@ header{
 }
 .txt-search{
     width: 95%;
-    padding: 5px 10px;
+    padding: 12px 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     
 }
 #btn-search{
@@ -60,29 +56,49 @@ header{
     display: inline;
     padding: 20px 0;
 }
+
+
 .main-head{
+    height: 5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    line-height: 4em;
+}
+.main-head a{
+    
 }
 #logo-shop{
-    line-height: 8vh;
+    /* line-height: 8vh; */
 }
 img{
     width: 30vw;
-    height: 10vh;
+    /* height: 10vh; */
+
+}.div-nav-bar{
 
 }
-.nav-bar{
+.nav-list{
 
 }
-.div-nav-bar{
-
+.nav-list__item{
+    display: inline;
+    padding: 40px 30px;
+    text-align: center;
 }
-.items-nav-bar{
-
+.nav-list__item a span{
+    font-size: 1.4em;
+    
 }
+a span:hover{
+    color: var(--hcolor);
+}
+/* icon */
+.first-head i, #pizzas, #salads, #combos, #drinks{
+    width: 1.01em;
+    height: 1.01em;
+    color: #fff;
+}
+
 .cart{
 
 }
