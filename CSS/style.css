@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 16px;
     list-style-type: none;
     text-align: center;
     color: var(--tcolor);
@@ -14,7 +14,10 @@
     --tcolor: #fff;
     --hcolor: #f00;
 }
-
+body{
+    width: 100%;
+    height: 100%;
+}
 /* Hét đờ */
 header{
     background: var(--mcolor);
@@ -22,7 +25,7 @@ header{
 .first-head{
     height: 2em;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-bottom: #fff 2px dashed;
     flex-wrap: nowrap;
@@ -31,18 +34,24 @@ header{
 .first-head a{
     padding: 10px 20px ;
 }
+.first-head__home{
+    width: 15%;
+}
 .first-head__search{
-    width: 60%;
+    width: 50%;
 }
 .search-bar{
-    display: inherit;
+    display: flex;
+    align-items: center;
 }
 .txt-search{
     width: 95%;
-    padding: 12px 10px;
+    padding: 5px;
+    padding-left: 30px;
     border: none;
     border-radius: 25px;
-    
+    color: #000;
+    text-align: left;
 }
 #btn-search{
     width: 1.5em;
@@ -50,8 +59,10 @@ header{
     outline: none;
     border: none;
     border-radius: 50%;
+    margin: 10px;
 }
 .first-head__menu-list{
+    width: 35%;
     position: relative;
     display: inline;
     padding: 20px 0;
@@ -64,34 +75,34 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-.main-head a{
-    
-}
 #logo-shop{
-    /* line-height: 8vh; */
+    height: 4em;
+    width: 30%;
+    border: 1px dashed #fff;
 }
-img{
-    width: 30vw;
-    /* height: 10vh; */
-
-}.div-nav-bar{
-
+#logo-shop__img{
+    background: url('../IMG/logo.jpg');
+    background-size:cover;
 }
 .nav-list{
-
+    display: flex;
+    padding-inline: 20px;
 }
 .nav-list__item{
-    display: inline;
-    padding: 40px 30px;
+    margin: 20px;
     text-align: center;
 }
 .nav-list__item a span{
     font-size: 1.4em;
-    
 }
 a span:hover{
     color: var(--hcolor);
 }
+.cart{
+    width: 10%;
+}
+
+
 /* icon */
 .first-head i, #pizzas, #salads, #combos, #drinks{
     width: 1.01em;
@@ -99,11 +110,30 @@ a span:hover{
     color: #fff;
 }
 
-.cart{
-
+.specal-even{
+    height: 15em;
+    border: 1px solid #f00;
+}
+.specal-even__img{
+    background-size: cover;
+}
+section{
+    color: #000
+}
+#salad h2{
+    color: #000;
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 2em;
+}
+hr{
+    width: 90%;
+    margin: auto;
 }
 .prt-container{
-
+    width: 90%;
+    border: 1px dashed #f00;
+    margin: auto;
 }
 .prt-swipe{
 
