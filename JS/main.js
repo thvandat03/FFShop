@@ -4,9 +4,9 @@ document.getElementById('combos').src = "data:image/png;base64,iVBORw0KGgoAAAANS
 
 function time(){
     var times = new Date();    
-    console.log(times.getHours() +"h "+ times.getMinutes());
+    console.log(times.getHours() +"h "+ times.getMinutes() +"p " + times.getSeconds() + " "+ (15*16) );
 }
-setInterval(time, 60000)
+setInterval(time, 1000)
 setTimeout(() => {
     
 }, 1000);
