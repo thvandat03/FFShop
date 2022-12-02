@@ -74,6 +74,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-inline: 20px;
 }
 #logo-shop{
     height: 4em;
@@ -95,12 +96,29 @@ header{
 .nav-list__item a span{
     font-size: 1.4em;
 }
-a span:hover{
+a span:hover, .fa-cart-shopping:hover{
     color: var(--hcolor);
 }
 .cart{
     width: 10%;
+    position: relative;
 }
+.fa-cart-shopping{
+    font-size: 2em;
+}
+.fa-cart-shopping::after{
+    content: attr(value);
+    position:relative;
+    font-size: .5em;
+    color: #fff;
+    background: var(--hcolor);
+    border-radius:50%;
+    padding: 2px 5px;
+    left:-10px;
+    top:-20px;
+    opacity:0.8;
+}
+
 
 
 /* icon */
@@ -174,3 +192,6 @@ hr{
 .bullet-swipe{
 
 }
+.swiper {
+    height: 300px;
+  }

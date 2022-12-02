@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/font/fontawesome/css/all.css">
     <link rel="shortcut icon" href="./IMG/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./JS/swiper/package/swiper-bundle.css">
+
     <title>FF-Shop</title>
 </head>
 <body>
@@ -90,8 +95,7 @@
                 </div>
             </div>
             <div class="cart">
-                <i class="fa-solid fa-cart-shopping"></i>
-                span
+                <i class="fa-solid fa-cart-shopping" value="2"></i>
             </div>
         </div>
     </header>
@@ -138,11 +142,34 @@
             </section>
         </div>
     </article>
+
+    <section>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div style="color: #000;" class="swiper-slide">Slide 1</div>
+                  <div style="color: #000;" class="swiper-slide">Slide 2</div>
+                  <div style="color: #000;" class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </section>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./JS/swiper/package/swiper-bundle.js"></script> -->
     
-    <!-- Fút tờ -->
-    <footer>
-        
-    </footer>
     <script src="https://kit.fontawesome.com/2ded04794d.js" crossorigin="anonymous"></script>
     <script src="./JS/main.js"></script>
 </body>
