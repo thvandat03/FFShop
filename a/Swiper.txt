@@ -1,4 +1,4 @@
-
+4r433
 
 
 ..................................................................................................................
@@ -7,9 +7,7 @@ html
 <div class="swiper mySwiper">
            <div class="swiper-wrapper">
               <div class="swiper-slide">
-               <img data-src="https://images.pexels.com/photos/1824273/pexels-photo-1824273.jpeg?cs=srgb&dl=pexels-victor-miyata-1824273.jpg&fm=jpg"
-               class="swiper-lazy"/>
-              </div>
+              
               <div class="swiper-slide">
                <img data-src="https://images.pexels.com/photos/3219549/pexels-photo-3219549.jpeg?cs=srgb&dl=pexels-engin-akyurt-3219549.jpg&fm=jpg"
                class="swiper-lazy"/>
@@ -29,71 +27,42 @@ html
            <div class="swiper-button-prev"></div>
            <div class="swiper-pagination"></div>
        </div>
+         </div>
+
+
+
+
+
+<div class="prt-container__item">
+                        <div class="prt-image">
+                            <a href="#" class="prt">
+                                <img class="prt-image__img" src="./IMG/background.jpg" alt="imgg" ></a>
+                        </div>
+                        <div class="prt-info">
+                            <div class="prt-content">
+                                <h3 class="prt-name">Sờ a sa lát</h3>
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    <p class="now-price">299.900đ</p>
+                                    <p class="old-price">300.000đ</p>
+                                </div>
+                            </div>
+                            <div class="prt-buy">
+                                <a href="#" class="btn-buy-item">Đặt mua</a>
+                            </div>
+                        </div>
+                    </div>
 
 
 ..................................................................................................................
 css
 ..................................................................................................................
-
-/* Import google font (Balsamiq Sans) */
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-   box-sizing: border-box;
-}
-
-
-/* Remove default padding and margin */
-* {
-   padding: 0;
-   margin: 0;
-}
-
-
-/* Default anchor tag styling */
-a {
-   text-decoration: none;
-   color: black;
-}
-
-
-a:hover {
-   cursor: pointer;
-}
-
-
-/* Default image styling */
-img {
-   padding: 1rem;
-   max-width: 75%;
-   height: auto;
-}
-
-
-/* Body styling */
-html,
-body {
- position: relative;
- height: 100%;
-}
-
-
-body {
-   font-family: 'Balsamiq Sans', cursive, "Roboto Mono";
-   font-size: 1.2rem;
-   text-align:justify;
-}
-
-
-.container {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 1rem;
-}
 
 
 .container > div {
@@ -172,7 +141,6 @@ div.project_content {
 .slide_5 {
    background-color:#9e6ffd ;
 }
-........................................................
 .swiper {
    width: 70%;
    --swiper-navigation-color: #000000;
