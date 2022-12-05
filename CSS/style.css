@@ -64,10 +64,14 @@ header{
     height: 4em;
     width: 30%;
     border: 1px dashed #fff;
+    background: rgba(29, 217, 51, 1);
 }
 #logo-shop__img{
-    background: url('../IMG/logo.jpg');
+    background: #f00;
     background-size:cover;
+}
+.specal-even{
+    background: rgba(29, 217, 51, .5);
 }
 .nav-list{
     display: flex;

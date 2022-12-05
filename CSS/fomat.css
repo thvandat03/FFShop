@@ -10,7 +10,7 @@
     font-family: Tahoma ;
 }
 :root{
-    --mcolor: #f7899b;
+    --mcolor: #ff7088;
     --tcolor: #fff;
-    --hcolor: #f63;
+    --hcolor: rgb(255, 64, 0);
 }
