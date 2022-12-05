@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/fomat.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/font/fontawesome/css/all.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-iu">
+            <div class="select">
+                <div class="switch-ln">
+
+                </div>
+            </div>
+            <h2>Đăng nhập vào tài khoản</h2>
+            <form class="form-ln" action="#">
+                <div class="txt-acc">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Tài khoản:</span>
+                    <input class="acc" type="text" required="required" maxlength="20">
+            </div>
+            <div class="txt-pass">
+                <i class="fas fa-key"></i>
+                <span>Mật khẩu:</span>
+                <input class="pass" type="password" required="required" maxlength="12">
+                <a href="#" id="sh-pass" onclick="show-hide">
+
+                    <i id="hide" class="fas fa-eye"></i>
+                </a>
+            </div>
+            <div class="remember-pass">Nhớ mật khẩu
+                <input type="checkbox">
+            </div>
+            <div class="btn-ok">
+                <input type="submit" value="Đăng nhập">
+            </div>
+            </form>
+            <div class="forgot">
+                <p>Bạn quên mật khẩu? <span><a href="#">Bấm vào đây!
+                    <!-- (Hãy tịnhh tâm suy nghĩ tự nhó đi) -->
+                </a></span></p>
+            </div>
+        </div>
+            <hr>
+        <div class="other-way"> 
+            <h2>Đăng nhập bằng cách khác</h2>
+            <a href="#" id="fb-connect">
+                <!-- <i class="fas facebook"></i> -->
+                <span>Facebook</span>
+            </a>
+            <a href="#" id="gg-connect">
+                <!-- <i class="fas google"></i> -->
+                <span>Google</span>
+            </a>
+        </div>
+    </div>
+<script>
+    function show_hide(target){
+        var passSt = document.querySelector('.sh-pass');
+        var input = document.querySelector('.pass');
+        if (input.getAttribute('type') == 'password') {
+            
+            input.setAttribute('type', 'text');
+        } else {
+            target.classList.replace('fas fa-eye-slash');
+            input.setAttribute('type', 'password');
+        }
+        return false;
+    }
+</script>
+</body>
+</html>

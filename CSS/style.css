@@ -1,19 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 16px;
-    list-style-type: none;
-    text-align: center;
-    color: var(--tcolor);
-    font-family: Tahoma ;
-}
-:root{
-    --mcolor: #f7899b;
-    --tcolor: #fff;
-    --hcolor: #f00;
-}
 body{
     width: 100%;
     height: 100%;
