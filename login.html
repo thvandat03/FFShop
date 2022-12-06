@@ -15,7 +15,10 @@
         <div class="sign-iu">
             <div class="select">
                 <div class="switch-ln">
-
+                    <button class="s-in active" id="sw-in" onclick="swIClick()">Đăng nhập
+                    </button>
+                    <button class="s-up" id="sw-up" onclick="swUClick()">Đăng kí
+                    </button>
                 </div>
             </div>
             <h2>Đăng nhập vào tài khoản</h2>
@@ -61,6 +64,20 @@
         </div>
     </div>
 <script>
+    var sUp = document.querySelector('#sw-up')
+    var sIn = document.querySelector('#sw-in')
+    function swIClick(){
+        console.log(sIn.className)
+        sIn.classList.add('active');
+        sUp.classList.remove('active');
+    }
+    function swUClick(){
+        console.log(sUp.className)
+        sIn.classList.remove('active');
+        sUp.classList.add('active');
+
+    }
+
     function show_hide(target){
         var passSt = document.querySelector('.sh-pass');
         var input = document.querySelector('.pass');
@@ -73,6 +90,7 @@
         }
         return false;
     }
+    
 </script>
 </body>
 </html>

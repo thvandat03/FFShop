@@ -27,8 +27,7 @@ body{
 }
 .container .sign-iu h2{
     font-size: 20px;
-    padding: 10px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 .form-ln{
     width: 100%;
@@ -36,11 +35,39 @@ body{
     margin-bottom: 20px;
 }
 .select{
-
+    width: 50%;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 20px;
+    background:rgba(255, 100, 126, 0);
+    margin: 5px auto;
+    margin-bottom: 10px;
 }
 .switch-ln{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.switch-ln button{
+    width: 100px;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.switch-ln .s-in, .switch-ln .s-up{
+    background: rgba(255, 100, 126, 0);
+    border-left: none;
+}
+.switch-ln .s-in.active, .switch-ln .s-up.active{
+    background: rgba(255, 100, 126, 1);
+    border: 1px solid rgba(255, 255, 255, .8);
 
 }
+
 .form-ln .txt-acc, .txt-pass{
     margin: 20px auto;
     width: 100%;
@@ -78,7 +105,7 @@ body{
     top: 10px;
 }
 .remember-pass{
-    margin: 20px 0 20px 60px;
+    margin: 10px 0 10px 60px;
     text-align: left;
     
 }
