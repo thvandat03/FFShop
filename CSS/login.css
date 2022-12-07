@@ -120,12 +120,18 @@ body{
     padding: 5px;
     margin-bottom: 10px;
 }
-
+#btn-forgot{
+    color: #000;
+    font-size: 12px;
+}
 .sign-iu span a:hover{
     color: #000;
 }
+#btn-forgot:hover{
+    color: #fff;
+}
 .other-way{
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -154,4 +160,9 @@ body{
     background: rgb(255, 70, 70);
     padding: 10px 0;
     border-radius: 10px;
+}
+
+/* ....................................................................... */
+.in-up{
+    display: flex;
 }

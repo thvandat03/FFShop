@@ -22,43 +22,69 @@
                 </div>
             </div>
             <h2>Đăng nhập vào tài khoản</h2>
-            <form class="form-ln" action="#">
-                <div class="txt-acc">
-                    <i class="fas fa-user-circle"></i>
-                    <span>Tài khoản:</span>
-                    <input class="acc" type="text" required="required" maxlength="20">
-            </div>
-            <div class="txt-pass">
-                <i class="fas fa-key"></i>
-                <span>Mật khẩu:</span>
-                <input class="pass" type="password" required="required" maxlength="12">
-                <a href="#" id="sh-pass" onclick="show-hide">
+            <div class="in-up">
 
-                    <i id="hide" class="fas fa-eye"></i>
-                </a>
+                <form class="form-up" action="#">
+                    <div class="txt-acc">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Tài khoản:</span>
+                        <input class="acc" type="text" required="required" maxlength="20">
+                </div>
+                <div class="txt-pass">
+                    <i class="fas fa-key"></i>
+                    <span>Mật khẩu:</span>
+                    <input class="pass" type="password" required="required" maxlength="12">
+                    <a href="#" id="sh-pass" onclick="show-hide">
+
+                        <i id="hide" class="fas fa-eye"></i>
+                    </a>
+                </div>
+                <div class="remember-pass">Nhớ mật khẩu
+                    <input type="checkbox">
+                </div>
+                <div class="btn-ok">
+                    <input type="submit" value="Đăng nhập">
+                </div>
+
+                <!-- ................ -->
+
+                <form class="form-ln" action="#">
+                    <div class="txt-nacc">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Tài khoản:</span>
+                        <input class="nacc" type="text" required="required" maxlength="20" placeholder="Số điện thoại">
+                </div>
+                <div class="txt-npass">
+                    <i class="fas fa-key"></i>
+                    <span>Mật khẩu:</span>
+                    <input class="npass" type="password" required="required" maxlength="12">
+                    <span>Xác nhận mật khẩu:</span>
+                    <input class="npass" type="password" required="required" maxlength="12">
+                </div>
+                <div class="btn-submit">
+                    <input type="submit" value="Đăng nhập">
+                </div>
+
+                
             </div>
-            <div class="remember-pass">Nhớ mật khẩu
-                <input type="checkbox">
-            </div>
-            <div class="btn-ok">
-                <input type="submit" value="Đăng nhập">
-            </div>
-            </form>
+            <!-- ..................... -->
+
             <div class="forgot">
-                <p>Bạn quên mật khẩu? <span><a href="#">Bấm vào đây!
+                <p>Bạn quên mật khẩu? <a id="btn-forgot" href="#">Bấm vào đây!
                     <!-- (Hãy tịnhh tâm suy nghĩ tự nhó đi) -->
-                </a></span></p>
+                </a></p>
             </div>
+        </form>
         </div>
             <hr>
         <div class="other-way"> 
             <h2>Đăng nhập bằng cách khác</h2>
             <a href="#" id="fb-connect">
-                <!-- <i class="fas facebook"></i> -->
+
                 <span>Facebook</span>
             </a>
             <a href="#" id="gg-connect">
-                <!-- <i class="fas google"></i> -->
+
                 <span>Google</span>
             </a>
         </div>
