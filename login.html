@@ -21,7 +21,7 @@
                     </button>
                 </div>
             </div>
-            <h2>Đăng nhập vào tài khoản</h2>
+            <h2 class="li-label">Đăng nhập vào tài khoản</h2>
             <div class="in-up">
 
                 <form class="form-ln" action="#">
@@ -33,10 +33,8 @@
                     <div class="txt-pass">
                         <i class="fas fa-key"></i>
                         <span>Mật khẩu:</span>
-                        <input class="pass" type="password" required="required" maxlength="12">
-                        <input type="checkbox" id="sh-pass" onclick="show-hide">
-                            <i id="hide" class="fas fa-eye"></i>
-                        </a>
+                        <input class="pass" id="pass" type="password" required="required" maxlength="12">
+                        <i id="sh-pass" class="fas fa-eye" onclick="showHide"></i>
                     </div>
                     <div class="remember-pass">Nhớ mật khẩu
                         <input type="checkbox">
@@ -79,7 +77,6 @@
             </div>   
         </div>
 
-            <hr>
         <div class="other-way"> 
             <h2>Đăng nhập bằng cách khác</h2>
             <a href="#" id="fb-connect">
@@ -108,8 +105,8 @@
     }
 
     function show_hide(target){
-        var passSt = document.querySelector('.sh-pass');
-        var input = document.querySelector('.pass');
+        var passSt = document.querySelector('#sh-pass');
+        var input = document.querySelector('#pass');
         if (input.getAttribute('type') == 'password') {
             
             input.setAttribute('type', 'text');
@@ -119,7 +116,13 @@
         }
         return false;
     }
-    
+    var pws = document.querySelector('#sh-pass');
+    var inputPass = document.querySelector('#pass');
+    function showHide(){
+        var type = inputPass.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.replace('fa-eye-slash');
+    }
 </script>
 </body>
 </html>
