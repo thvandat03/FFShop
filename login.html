@@ -43,7 +43,7 @@
                         <input type="submit" value="Đăng nhập">
                     </div>
                     <div class="forgot">
-                        <p>Bạn quên mật khẩu? <a id="btn-forgot" href="#">Bấm vào đây!
+                        <p>Bạn quên mật khẩu? <a id="btn-forgot" title="Hãy tịnh tâm và suy nghĩ về mật khẩu của bạn" href="#">Bấm vào đây!
                         </a></p>
                     </div>
                 </form>
@@ -80,11 +80,11 @@
         <div class="other-way"> 
             <h2>Đăng nhập bằng cách khác</h2>
             <a href="#" id="fb-connect">
-
+                <i class="fa-brands fa-meta"></i>
                 <span>Facebook</span>
             </a>
             <a href="#" id="gg-connect">
-
+                <i class="fa-brands fa-google"></i>
                 <span>Google</span>
             </a>
         </div>
@@ -92,37 +92,35 @@
 <script>
     var sUp = document.querySelector('#sw-up')
     var sIn = document.querySelector('#sw-in')
+    var inForm = document.querySelector('.form-ln');
+    var upForm = document.querySelector('.form-up');
+    var mFrom = document.querySelector('.in-up');
+    upForm.setAttribute('id', 'up')
+    var up = document.getElementById('up').style.display = 'none';
+
     function swIClick(){
         console.log(sIn.className)
         sIn.classList.add('active');
         sUp.classList.remove('active');
+        upForm.classList.add('hide')
+        inForm.classList.remove('hide')
+        var up = document.getElementById('up').style.display = 'none';
     }
     function swUClick(){
         console.log(sUp.className)
         sIn.classList.remove('active');
         sUp.classList.add('active');
+        upForm.classList.remove('hide')
+        inForm.classList.add('hide');
+        var up = document.getElementById('up').style.display = 'block';
 
     }
 
-    function show_hide(target){
-        var passSt = document.querySelector('#sh-pass');
-        var input = document.querySelector('#pass');
-        if (input.getAttribute('type') == 'password') {
-            
-            input.setAttribute('type', 'text');
-        } else {
-            target.classList.replace('fas fa-eye-slash');
-            input.setAttribute('type', 'password');
-        }
-        return false;
-    }
-    var pws = document.querySelector('#sh-pass');
-    var inputPass = document.querySelector('#pass');
     function showHide(){
-        var type = inputPass.getAttribute('type') === 'password' ? 'text' : 'password';
-        password.setAttribute('type', type);
-        this.classList.replace('fa-eye-slash');
+        console.log(passSt)
+        console.log(input)
     }
+
 </script>
 </body>
 </html>

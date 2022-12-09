@@ -13,33 +13,44 @@
     background: var(--mcolor);
 
 }
-.slide-brand{
-    height: 90px;
-    padding: 10px  0 10px 20px;
+.slidebar_user{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: var(--hcolor);
 }
-.slide-brand span{
-    display: inline-block;
-    padding-right: 1rem;
+.slidebar_user img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 1px 4px 2px rgb(0, 0, 0), 0px 1px 4px 4px #f81339;
 }
 .slide-bar-menu{
     width: 100%;
-    margin-bottom: 1.3rem;
 }
-.slide-bar-menu a{
+.slide-bar-menu li{
+    text-align: left;
     display: block;
     color: var(--tcolor);
-    font-size: 1.5rem;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    border: 1px solid rgba(255, 255, 255, .2);
 }
-.slide-bar-menu a.active{
+.slide-bar-menu li i{
+    font-size: 20px;
+}
+
+.slide-bar-menu li span{
+    padding-left: 5px;
+}
+.slide-bar-menu li.active{
     background: #fff;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: #000;    
+    color: #000;
     border-radius: 30px 0 0 30px;
-}
-.slide-bar-menu a span:first-child{
-    font-size: 1.5rem;
-    padding-right: 1rem;
+    transform: translateX(50px);
+    transition: .3s ease-in-out;
 }
 .main-content{
     margin-left: 345px;
@@ -47,8 +58,6 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     position: fixed;
     top: 0;
-    right: 0;
 }
