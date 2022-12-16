@@ -34,7 +34,7 @@
                         <i class="fas fa-key"></i>
                         <span>Mật khẩu:</span>
                         <input class="pass" id="pass" type="password" required="required" maxlength="12">
-                        <i id="sh-pass" class="fas fa-eye" onclick="showHide"></i>
+                        <i id="sh-pass" class="fas fa-eye" onclick="showHide()"></i>
                     </div>
                     <div class="remember-pass">Nhớ mật khẩu
                         <input type="checkbox">
@@ -97,6 +97,8 @@
     var mFrom = document.querySelector('.in-up');
     upForm.setAttribute('id', 'up')
     var up = document.getElementById('up').style.display = 'none';
+    var pass = document.querySelector('#pass');
+    var iconPass = document.getElementById('sh-pass')
 
     function swIClick(){
         console.log(sIn.className)
@@ -117,8 +119,15 @@
     }
 
     function showHide(){
-        console.log(passSt)
-        console.log(input)
+        var type = pass.getAttribute('type');
+        console.log(type);
+        if (type === "password"){
+            pass.setAttribute('type', 'text');
+            iconPass.classList.replace('fa-eye', 'fa-eye-slash')
+        }else{
+            (pass.setAttribute('type', 'password'))
+            iconPass.classList.replace('fa-eye-slash', 'fa-eye')
+        }
     }
 
 </script>

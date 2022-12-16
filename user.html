@@ -19,19 +19,19 @@
         </div>
         <div class="slide-bar-menu">
             <ul>
-                <li class="select" onclick="select()">
+                <li class="select" id="s1" onclick="select()">
                     <a href="#"><i class="far fa-id-card active"></i><span>Tài khoản</span></li></a>
                 </li>
-                <li class="select" onclick="select()">
+                <li class="select" id="s2" onclick="select()">
                     <a href="#"><i class="far fa-credit-card"></i><span>Hình thức thanh toán</span></a>
                 </li>
-                <li class="select" onclick="select()">
+                <li class="select" id="s3" onclick="select()">
                     <a href="#"><i class="fas fa-file-invoice-dollar"></i><span>Lịch sử mua hàng</span></a>
                 </li>
-                <li class="select" onclick="select()">
+                <li class="select" id="s4" onclick="select()">
                     <a href="#"><i class="fas fa-ticket"></i><span>Voucher</span></a>
                 </li>
-                <li class="select" onclick="select()">
+                <li class="select" id="s5" onclick="select()">
                     <a href="#"><i class="fas fa-right-from-bracket"></i><span>Đăng xuất</span></a>
                 </li>
             </ul>
@@ -59,9 +59,9 @@
 
 
 <script>
-    var sl = document.querySelector('.select');
     function select(){
-        sl.classList.add('active');
+        var id = document.getElementsByTagName('li');
+        console.log(id);
     }
 </script>
 </body>
